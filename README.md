@@ -1,7 +1,7 @@
 # Bowling dojo
 Demo solution can be found on the “demo_solution” branch.
 
-### Source: [ApprovalTests](http://approvaltests.sourceforge.net/?q=node/5)
+### Source: http://approvaltests.sourceforge.net/?q=node/5 and https://codingdojo.org/kata/Bowling/
 
 ### Technology
  - Java 8
@@ -10,26 +10,33 @@ Demo solution can be found on the “demo_solution” branch.
 ## Introduction
 
 ```
-For this bowling dojo try to get BowlingTest to pass using these simple rules:
-1)  run BowlingTest test often
-2)  don't write any other tests
+When you create your solution you should run the tests often!
+To resolve this dojo tasks you will need to create and implement a toString() method on the Bowling class. 
+The output format has to be the same as tests asserts.
 
 Imagine, that you play bowling game. You have 2 rolling opportunity in every turn 
 and there are 10 turns only. After all your rolls you want to calculate your scores 
 from turn by turn. To resolve the calculation you will need to create and implement 
-the toString() method on the Bowling class. The output format has to be the same as 
-tests asserts.
-When you create your solution you should run the tests often!
+the toString() method on the Bowling class. 
 
-Bowling score rules: https://en.wikipedia.org/wiki/Ten-pin_bowling#Traditional_scoring
+We can briefly summarize the scoring for this form of bowling:
+- Each game, or “line” of bowling, includes ten turns, or “frames” for the bowler.
+- In each frame, the bowler gets up to two tries to knock down all the pins.
+- If in two tries, he fails to knock them all down, his score for that frame is 
+the total number of pins knocked down in his two tries.
+- If in two tries he knocks them all down, this is called a “spare” and his score for 
+the frame is ten plus the number of pins knocked down on his next throw (in his next turn).
+- If on his first try in the frame he knocks down all the pins, this is called a “strike”. 
+His turn is over, and his score for the frame is ten plus the simple total of the pins 
+knocked down in his next two rolls (not turns, just rolls!).
+- If he gets a spare or strike in the last (tenth) frame, the bowler gets to throw one 
+or two more bonus balls, respectively. These bonus throws are taken as part of the same turn. 
+If the bonus throws knock down all the pins, the process does not repeat: 
+the bonus throws are only used to calculate the score of the final frame.
+- The game score is the total of all frame scores.
 
-Things to notice:
- - How good was your feedback?
- - What was your test to code ratio?
- - Were failing tests informative?
- - Did you know when you were done?
- - Did you know what to do next?
- - What was test coverage?
+More info on the rules at: 
+https://en.wikipedia.org/wiki/Ten-pin_bowling#Traditional_scoring
 ```
 
 ## Example
@@ -48,4 +55,15 @@ Output:
 8) 10 [19] => 124 
 9) 8, 1 [9] => 133 
 10) 10, 10, 10 [30] => 163 
+```
+
+## Extras
+```
+Things to notice:
+ - How good was your feedback?
+ - What was your test to code ratio?
+ - Were failing tests informative?
+ - Did you know when you were done?
+ - Did you know what to do next?
+ - What was test coverage?
 ```
