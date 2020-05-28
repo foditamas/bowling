@@ -8,8 +8,6 @@ Demo solution can be found on the “demo_solution” branch.
  - Maven 3
 
 ## Introduction
-
-```
 When you create your solution you should run the tests often!
 To resolve this dojo tasks you will need to create and implement a toString() method on the Bowling class. 
 The output format has to be the same as tests asserts.
@@ -37,7 +35,7 @@ the bonus throws are only used to calculate the score of the final frame.
 
 More info on the rules at: 
 https://en.wikipedia.org/wiki/Ten-pin_bowling#Traditional_scoring
-```
+
 
 ## Example
 ```
