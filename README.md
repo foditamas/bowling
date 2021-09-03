@@ -65,3 +65,10 @@ Things to notice:
  - Did you know what to do next?
  - What was test coverage?
 ```
+## TODO
+```
+tasks:
+ - class Round: roll1, roll2 ; strike(), spare()
+ - class FinalRound: Round + roll3
+ - szekvenciális feldolgozás, strike check -> next
+```
